@@ -1,0 +1,56 @@
+{{! <form method="POST" action="/login">
+  <div>
+    <label for="username">
+      username
+    </label>
+    <input type="text" name="username" id="username" required />
+  </div>
+  <div>
+    <label for="password">
+      password
+    </label>
+    <input type="text" name="password" id="password" required />
+  </div>
+  <button type="submit">
+    Login
+  </button>
+</form>
+<a href="/register">
+  Register
+</a> }}
+{{#if message}}
+  <div class="alert alert-info" role="alert">
+    {{message}}
+  </div>
+{{/if}}
+
+<form method="POST" action="/login">
+  <h3>
+    LOGIN
+  </h3>
+  <div class="mb-3">
+    <input
+      type="text"
+      class="form-control"
+      id="username"
+      name="username"
+      aria-describedby="username"
+      placeholder="username"
+    />
+  </div>
+  <div class="mb-3">
+    <input
+      type="password"
+      class="form-control"
+      id="password"
+      name="password"
+      placeholder="password"
+    />
+  </div>
+  <button type="submit" class="btn btn-info">
+    login
+  </button>
+  <a class="link-info" href="/register">
+    register?
+  </a>
+</form>

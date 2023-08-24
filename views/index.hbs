@@ -1,0 +1,44 @@
+{{! Factify }}
+{{#if message}}
+  <div class="alert alert-info" role="alert">
+    {{message}}
+  </div>
+{{/if}}
+
+<div class="container">
+  <h1>
+    factify
+  </h1>
+  <p>
+    {{user}}
+  </p>
+
+  <form class="row g-3" method="GET" action="/create">
+    <button type="submit" class="btn btn-outline-info mb-3">
+      create fact
+    </button>
+  </form>
+
+  <form class="row g-3" method="GET" action="/facts">
+    <button type="submit" class="btn btn-outline-info mb-3">
+      see what others created
+    </button>
+  </form>
+
+  <form class="row g-3" method="GET" action="/fact">
+    <button type="submit" class="btn btn-outline-info mb-3">
+      generate random fact from the internet!
+    </button>
+  </form>
+
+  <div
+    class="card text-white mx-auto bg-transparent mb-3"
+    style="max-width: 18rem;"
+  >
+    <div class="card-header">
+      {{fact}}
+    </div>
+    <div class="card-body">
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+{{! <form method="POST" action="/create">
+  <div>
+    <label for="factByUser">
+      What fact would you like to create in our database?
+    </label>
+    <br />
+    <input type="text" name="factByUser" id="factByUser" required />
+  </div>
+  <button type="submit">
+    Create
+  </button>
+</form> }}
+
+<form method="POST" action="/create">
+  <div class="mb-3">
+    <textarea
+      class="form-control"
+      placeholder="what fact would you like to create in our database?"
+      id="floatingTextarea2"
+      name="factByUser"
+      style="height: 100px"
+    ></textarea>
+  </div>
+  {{!
+  <div class="form-floating">
+    <textarea
+      class="form-control"
+      placeholder="what fact would you like to create in our database?"
+      id="floatingTextarea2"
+      style="height: 100px"
+    ></textarea>
+    <label for="floatingTextarea2">
+      what fact would you like to create in our database?
+    </label>
+  </div> }}
+
+  <button type="submit" class="btn btn-info">
+    create
+  </button>
+  <a class="link-info" href="/">
+    go back?
+  </a>
+</form>
